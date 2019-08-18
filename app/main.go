@@ -5,7 +5,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strconv"
 
 	"cloud.google.com/go/compute/metadata"
 	"github.com/sirupsen/logrus"
@@ -17,7 +16,6 @@ import (
 	"github.com/sotah-inc/steamwheedle-cartel/pkg/state/fn"
 )
 
-var port int
 var serviceName string
 var projectId string
 var state fn.GatewayState
@@ -34,7 +32,7 @@ func init() {
 	}
 
 	// resolving service name
-	serviceName = os.Getenv("K_SERVICE")
+	serviceName = os.Getenv("FUNCTION_NAME")
 
 	// establishing log verbosity
 	logVerbosity, err := logrus.ParseLevel("info")
@@ -61,20 +59,10 @@ func init() {
 	// done preliminary setup
 	logging.WithField("service", serviceName).Info("Initializing service")
 
-	// parsing http port
-	port, err = strconv.Atoi(os.Getenv("PORT"))
-	if err != nil {
-		log.Fatalf("Failed to get port: %s", err.Error())
-
-		return
-	}
-	logging.WithField("port", port).Info("Initializing with port")
-
 	// producing gateway state
 	logging.WithFields(logrus.Fields{
 		"project":      projectId,
 		"service-name": serviceName,
-		"port":         port,
 	}).Info("Producing fn-gateway state")
 
 	state, err = fn.NewGatewayState(
