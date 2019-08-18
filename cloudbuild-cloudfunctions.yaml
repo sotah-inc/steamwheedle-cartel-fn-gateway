@@ -1,0 +1,11 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: [
+      'functions', 'deploy', 'FnGateway',
+      '--runtime', 'go111',
+      '--trigger-http',
+      '--source', './app',
+      '--memory', '128MB',
+      '--region', 'us-central1',
+      '--timeout', '120s'
+    ]
