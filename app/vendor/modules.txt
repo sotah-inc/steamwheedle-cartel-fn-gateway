@@ -46,15 +46,22 @@ github.com/nats-io/nkeys
 github.com/nats-io/nuid
 # github.com/sirupsen/logrus v1.4.2
 github.com/sirupsen/logrus
-# github.com/sotah-inc/steamwheedle-cartel v0.0.0-20190818162631-e8e70d3576eb
+# github.com/sotah-inc/steamwheedle-cartel v0.0.0-20190819021741-04809c5b0b65
 github.com/sotah-inc/steamwheedle-cartel/pkg/act
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard
 github.com/sotah-inc/steamwheedle-cartel/pkg/logging
 github.com/sotah-inc/steamwheedle-cartel/pkg/logging/stackdriver
 github.com/sotah-inc/steamwheedle-cartel/pkg/sotah
-github.com/sotah-inc/steamwheedle-cartel/pkg/sotah/codes
 github.com/sotah-inc/steamwheedle-cartel/pkg/state/fn
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard
+github.com/sotah-inc/steamwheedle-cartel/pkg/sotah/codes
 github.com/sotah-inc/steamwheedle-cartel/pkg/util
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/characterclass
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/characterfaction
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/charactergender
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/characterrace
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/itembinds
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/realmpopulations
+github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/realmtypes
 github.com/sotah-inc/steamwheedle-cartel/pkg/sotah/sortdirections
 github.com/sotah-inc/steamwheedle-cartel/pkg/sotah/sortkinds
 github.com/sotah-inc/steamwheedle-cartel/pkg/bus
@@ -67,13 +74,6 @@ github.com/sotah-inc/steamwheedle-cartel/pkg/state
 github.com/sotah-inc/steamwheedle-cartel/pkg/state/subjects
 github.com/sotah-inc/steamwheedle-cartel/pkg/store
 github.com/sotah-inc/steamwheedle-cartel/pkg/store/regions
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/characterclass
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/characterfaction
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/charactergender
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/characterrace
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/itembinds
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/realmpopulations
-github.com/sotah-inc/steamwheedle-cartel/pkg/blizzard/realmtypes
 github.com/sotah-inc/steamwheedle-cartel/pkg/database/codes
 github.com/sotah-inc/steamwheedle-cartel/pkg/hell/collections
 github.com/sotah-inc/steamwheedle-cartel/pkg/messenger
